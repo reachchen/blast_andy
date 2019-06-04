@@ -1,0 +1,31 @@
+apply plugin: 'maven'
+
+task generateSourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier 'sources'
+}
+
+artifacts {
+    archives generateSourcesJar
+}
+
+uploadArchives {
+    repositories {
+
+        mavenDeployer {
+            //发布到本地仓库
+//            repository(url: uri("$projectDir/repo"))
+            //发布到远程仓库
+            repository(url: "http://172.16.8.6:8082/repository/maven-snapshots") {
+                //nexus登录默认用户名和密码
+                authentication(userName: "maven", password: "maven")
+            }
+            pom.project {
+                groupId "${GroupId}"
+                artifactId "${project.name}"
+                version "${version}"
+            }
+        }
+
+    }
+}

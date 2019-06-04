@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/select_layout"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_title_back_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@drawable/press_bg_selector"
+        android:drawableLeft="@mipmap/back_icon"
+        android:drawablePadding="5dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxWidth="110dp"
+        android:maxLines="1"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/textcolor333333"
+        android:textSize="15dp"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/iv_title_search"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/press_bg_selector"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scaleType="center"
+        android:src="@mipmap/ic_search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_title_add"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/press_bg_selector"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scaleType="center"
+        android:src="@mipmap/tianjia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_title_left_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_titile_left"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxWidth="100dp"
+            android:maxLines="1"
+            android:minWidth="75dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/selector_title_text_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_title_right_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_titile_right"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxWidth="100dp"
+            android:maxLines="1"
+            android:minWidth="75dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/selector_title_text_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

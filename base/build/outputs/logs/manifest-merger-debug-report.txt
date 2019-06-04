@@ -1,0 +1,57 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\yin_he\blast\base\build\AndroidManifest.xml:2:1-15:12
+INJECTED from C:\yin_he\blast\base\build\AndroidManifest.xml:2:1-15:12
+INJECTED from C:\yin_he\blast\base\build\AndroidManifest.xml:2:1-15:12
+INJECTED from C:\yin_he\blast\base\build\AndroidManifest.xml:2:1-15:12
+INJECTED from C:\yin_he\blast\base\build\AndroidManifest.xml:2:1-15:12
+INJECTED from C:\yin_he\blast\base\build\AndroidManifest.xml:2:1-15:12
+INJECTED from C:\yin_he\blast\base\build\AndroidManifest.xml:2:1-15:12
+	package
+		ADDED from C:\yin_he\blast\base\build\AndroidManifest.xml:3:5-28
+		INJECTED from C:\yin_he\blast\base\build\AndroidManifest.xml
+		INJECTED from C:\yin_he\blast\base\build\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\yin_he\blast\base\build\AndroidManifest.xml
+		ADDED from C:\yin_he\blast\base\build\AndroidManifest.xml:2:1-15:12
+		INJECTED from C:\yin_he\blast\base\build\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\yin_he\blast\base\build\AndroidManifest.xml
+		ADDED from C:\yin_he\blast\base\build\AndroidManifest.xml:2:1-15:12
+		INJECTED from C:\yin_he\blast\base\build\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\yin_he\blast\base\build\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from C:\yin_he\blast\base\build\AndroidManifest.xml:5:5-74
+	android:name
+		ADDED from C:\yin_he\blast\base\build\AndroidManifest.xml:5:22-71
+uses-permission#android.permission.BLUETOOTH
+ADDED from C:\yin_he\blast\base\build\AndroidManifest.xml:6:5-68
+	android:name
+		ADDED from C:\yin_he\blast\base\build\AndroidManifest.xml:6:22-65
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from C:\yin_he\blast\base\build\AndroidManifest.xml:7:5-76
+	android:name
+		ADDED from C:\yin_he\blast\base\build\AndroidManifest.xml:7:22-73
+application
+ADDED from C:\yin_he\blast\base\build\AndroidManifest.xml:9:5-13:19
+	android:supportsRtl
+		ADDED from C:\yin_he\blast\base\build\AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from C:\yin_he\blast\base\build\AndroidManifest.xml:11:9-41
+	android:allowBackup
+		ADDED from C:\yin_he\blast\base\build\AndroidManifest.xml:10:9-35
+uses-sdk
+INJECTED from C:\yin_he\blast\base\build\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\yin_he\blast\base\build\AndroidManifest.xml
+INJECTED from C:\yin_he\blast\base\build\AndroidManifest.xml
+INJECTED from C:\yin_he\blast\base\build\AndroidManifest.xml
+INJECTED from C:\yin_he\blast\base\build\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\yin_he\blast\base\build\AndroidManifest.xml
+		ADDED from C:\yin_he\blast\base\build\AndroidManifest.xml
+		INJECTED from C:\yin_he\blast\base\build\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\yin_he\blast\base\build\AndroidManifest.xml
+		ADDED from C:\yin_he\blast\base\build\AndroidManifest.xml
+		INJECTED from C:\yin_he\blast\base\build\AndroidManifest.xml

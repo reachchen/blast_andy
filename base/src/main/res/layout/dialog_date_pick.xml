@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="@dimen/y1364"
+                android:layout_height="@dimen/x1056"
+                android:background="@drawable/base_dialog_bg"
+                android:padding="@dimen/x30"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/iv_left_double"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/x80"
+            android:contentDescription="@null"
+            android:padding="@dimen/x10"
+            android:src="@mipmap/ic_double_left"
+            />
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/x80"
+            android:contentDescription="@null"
+            android:padding="@dimen/x10"
+            android:src="@mipmap/ic_left_month"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/dialog_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="2018-3"
+            />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x80"
+            android:contentDescription="@null"
+            android:padding="@dimen/x10"
+            android:src="@mipmap/ic_right_month"
+            />
+
+        <ImageView
+            android:id="@+id/iv_right_double"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x80"
+            android:contentDescription="@null"
+            android:padding="@dimen/x10"
+            android:src="@mipmap/ic_ic_double_right"
+            />
+
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x2"
+        android:layout_below="@+id/ll_top"
+        android:layout_marginTop="@dimen/x30"
+        android:background="@color/color_c6bfa2"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_week"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        >
+
+        <TextView
+            style="@style/dialog_text"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="星期日"
+            />
+
+        <TextView
+            style="@style/dialog_text"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="星期一"
+            />
+
+        <TextView
+            style="@style/dialog_text"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="星期二"
+            />
+
+        <TextView
+            style="@style/dialog_text"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="星期三"
+            />
+
+        <TextView
+            style="@style/dialog_text"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="星期四"
+            />
+
+        <TextView
+            style="@style/dialog_text"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="星期五"
+            />
+
+        <TextView
+            style="@style/dialog_text"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="星期六"
+            />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/gv_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_week"
+        android:background="@drawable/bg_gridview_date"
+        android:gravity="center"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:cacheColorHint="@color/white"
+        android:horizontalSpacing="@dimen/x2"
+        android:listSelector="@null"
+        android:numColumns="7"
+        android:verticalSpacing="@dimen/x2"
+        />
+</RelativeLayout>

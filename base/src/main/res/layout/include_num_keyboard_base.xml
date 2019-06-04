@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?><!--键盘-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_key_1_base"
+            style="@style/reserve_num_keyboard_base"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/common_top_left_keyboard"
+            android:text="1" />
+
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="match_parent"
+            android:background="@color/color_c7bfa1" />
+
+        <TextView
+            android:id="@+id/btn_key_2_base"
+            style="@style/reserve_num_keyboard_base"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="2" />
+
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="match_parent"
+            android:background="@color/color_c7bfa1" />
+
+        <TextView
+            android:id="@+id/btn_key_3_base"
+            style="@style/reserve_num_keyboard_base"
+            android:layout_height="match_parent"
+            android:background="@drawable/common_top_right_keyboard"
+            android:layout_weight="1"
+            android:text="3" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/color_c7bfa1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/btn_key_4_base"
+            style="@style/reserve_num_keyboard_base"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="4" />
+
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="match_parent"
+            android:background="@color/color_c7bfa1" />
+
+        <TextView
+            android:id="@+id/btn_key_5_base"
+            style="@style/reserve_num_keyboard_base"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="5" />
+
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="match_parent"
+            android:background="@color/color_c7bfa1" />
+
+        <TextView
+            android:id="@+id/btn_key_6_base"
+            style="@style/reserve_num_keyboard_base"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="6" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/color_c7bfa1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/btn_key_7_base"
+            style="@style/reserve_num_keyboard_base"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="7" />
+
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="match_parent"
+            android:background="@color/color_c7bfa1" />
+
+        <TextView
+            android:id="@+id/btn_key_8_base"
+            style="@style/reserve_num_keyboard_base"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="8" />
+
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="match_parent"
+            android:background="@color/color_c7bfa1" />
+
+        <TextView
+            android:id="@+id/btn_key_9_base"
+            style="@style/reserve_num_keyboard_base"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="9" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/color_c7bfa1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/btn_key_point_base"
+            style="@style/reserve_num_keyboard_base"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/common_bottom_left_keyboard"
+            android:text="." />
+
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="match_parent"
+            android:background="@color/color_c7bfa1" />
+
+        <TextView
+            android:id="@+id/btn_key_0_base"
+            style="@style/reserve_num_keyboard_base"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="0" />
+
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="match_parent"
+            android:background="@color/color_c7bfa1" />
+
+        <TextView
+            android:id="@+id/btn_key_delete_base"
+            style="@style/reserve_num_keyboard_base"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/common_bottom_right_keyboard"
+            android:text="退格" />
+    </LinearLayout>
+
+
+</merge>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Base</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_admit">确认</string>
+    <string name="save">保存</string>
+    <string name="base_back">返回</string>
+    <string name="leave_this_page">离开此页</string>
+    <string name="continue_checkout">继续结账</string>
+</resources>

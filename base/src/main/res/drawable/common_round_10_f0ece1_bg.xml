@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--底色-->
+    <solid android:color="@color/color_f0ece1" />
+    <!--角度-->
+    <corners android:radius="@dimen/y10" />
+</shape><!--全局文件，改动之前确认-->

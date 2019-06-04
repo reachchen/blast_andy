@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar_layout_2"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+    <ImageView
+        android:id="@+id/img_bar_back"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/press_bg_selector"
+        android:scaleType="center"
+        android:src="@mipmap/back_icon"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="标题"
+        android:textColor="@color/textcolor333333"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_bar_search"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/press_bg_selector"
+            android:scaleType="center"
+            android:src="@mipmap/ic_search"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img_bar_print"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-10dp"
+            android:background="@drawable/press_bg_selector"
+            android:scaleType="center"
+            android:src="@mipmap/icon_print" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_bar_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="取消"
+        android:textColor="@color/color_f24e3e"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/tv_bar_cancel"
+        android:clickable="true"
+        android:paddingLeft="15dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/et_title_search"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_et_search"
+            android:drawableLeft="@mipmap/ic_search"
+            android:hint="请输入物品名称"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:textColor="@color/textcolor333333"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/iv_clear_img"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:scaleType="center"
+            android:src="@mipmap/icon_clear" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

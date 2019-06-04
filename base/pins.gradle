@@ -1,0 +1,287 @@
+import com.android.manifmerger.ManifestMerger2
+import com.android.manifmerger.MergingReport
+import com.android.manifmerger.XmlDocument
+import com.android.utils.ILogger
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:manifest-merger:25.3.0"
+    }
+}
+
+def pLogger = new ILogger() {
+    @Override
+    void error(Throwable t, String msgFormat, Object... args) {
+        System.out.println("error: " + String.format(Locale.CHINA, msgFormat, args));
+    }
+
+    @Override
+    void warning(String msgFormat, Object... args) {
+        System.out.println("warning: " + String.format(Locale.CHINA, msgFormat, args));
+    }
+
+    @Override
+    void info(String msgFormat, Object... args) {
+        System.out.println("info: " + String.format(Locale.CHINA, msgFormat, args));
+    }
+
+    @Override
+    void verbose(String msgFormat, Object... args) {
+        System.out.println("verbose: " + String.format(Locale.CHINA, msgFormat, args));
+    }
+};
+/*-
+def aidlSrcDirs = []
+def assetsSrcDirs = []
+def javaSrcDirs = []
+def jniSrcDirs = []
+def jniLibsSrcDirs = []
+def manifestSrcFiles = []
+def resSrcDirs = []
+
+//各默认路径
+def aidlPath = "${File.separator}src${File.separator}main${File.separator}assets"
+def assetsPath = "${File.separator}src${File.separator}main${File.separator}assets";
+def jniPath = "${File.separator}src${File.separator}main${File.separator}jni";
+def jniLibPath = "${File.separator}src${File.separator}main${File.separator}jniLibs";
+def srcPath = "${File.separator}src${File.separator}main${File.separator}java";
+def resPath = "${File.separator}src${File.separator}main${File.separator}res";
+def manifestPath = "${File.separator}src${File.separator}AndroidManifest.xml";
+*/
+/**
+ * 向相应集合中添加路径
+ * @param libraryProperties 属性对象
+ * @param property 属性key
+ * @param libraryName 子工程名
+ * @param defPath 默认路径
+ * @param dirs 集合
+
+ def addSpecDir = {
+ def libraryProperties, String property, String libraryName, String defPath, def dirs ->
+ def file = libraryProperties.getProperty(property)
+ if (file.size() == 0) {
+ file = libraryName + defPath;
+ }file = file.toString()
+ if (!dirs.contains(file)) {
+ dirs << file
+ }
+ } */
+/**
+ * 递归添加各路径
+
+ def addLibrary
+ addLibrary = { String libraryPath ->
+ // check [micro.properties] exists or not
+ System.out.println("libraryPath:" + libraryPath)
+ File libraryPropertiesFile = new File(libraryPath, 'micro.properties');
+ if (!libraryPropertiesFile.exists()) return
+
+ def libraryName = file(libraryPath).name
+ System.out.println("libraryName:" + libraryName)
+ // read micro module properties
+ def libraryProperties = new Properties()
+ libraryPropertiesFile.withInputStream { libraryProperties.load(it) }libraryProperties = new ConfigSlurper().parse(libraryProperties)
+
+ libraryProperties.android.library.reference.each {String value = it.value;
+ if (value.startsWith(".")) {value = value.substring(1);}File childLibrary = new File("$projectDir" + value);
+ System.out.println("childLibrary:" + childLibrary)
+ if (childLibrary.exists()) {addLibrary(childLibrary.absolutePath)} else {System.out.println("error: " + libraryName + "[library]: android.library.reference [" + childLibrary.absolutePath + "] is not exists.")}}System.out.println("==============aidlSrcDir===========" + libraryName)
+
+ // add aidl.srcDir
+ addSpecDir(libraryProperties, 'aidl.srcDir', libraryName, aidlPath, aidlSrcDirs)
+ addSpecDir(libraryProperties, 'assets.srcDir', libraryName, assetsPath, assetsSrcDirs)
+ addSpecDir(libraryProperties, 'jni.srcDir', libraryName, jniPath, jniSrcDirs)
+ addSpecDir(libraryProperties, 'jniLibs.srcDir', libraryName, jniLibPath, jniLibsSrcDirs)
+ addSpecDir(libraryProperties, 'java.srcDir', libraryName, srcPath, javaSrcDirs)
+ addSpecDir(libraryProperties, 'res.srcDir', libraryName, resPath, resSrcDirs)
+ addSpecDir(libraryProperties, 'manifest.srcFile', libraryName, manifestPath, manifestSrcFiles)}*/
+
+/**
+ * 模块处理
+
+ def microModuleHandler = { ->
+
+ File moduleDir = new File("$projectDir");
+ String[] microModuleDirs = moduleDir.list();
+ System.out.println("microModuleDirs:" + microModuleDirs);
+
+ def mainLibrary = "${projectDir}${File.separator}main";
+ System.out.println("mainLibrary:" + mainLibrary);
+ addLibrary(mainLibrary)
+
+ File mainManifestFile = new File("${projectDir}${File.separator}${manifestSrcFiles[manifestSrcFiles.size() - 1]}");
+ System.out.println("mainManifestFile:" + mainManifestFile);
+
+ ManifestMerger2.MergeType mergeType = ManifestMerger2.MergeType.APPLICATION
+ XmlDocument.Type documentType = XmlDocument.Type.MAIN;
+ ManifestMerger2.Invoker invoker = new ManifestMerger2.Invoker(mainManifestFile, logger, mergeType, documentType);
+ for (int i = 0; i < manifestSrcFiles.size() - 1; i++) {File microManifestFile = new File("$projectDir${File.separator}${manifestSrcFiles[i]}");
+ System.out.println("microManifestFile:" + microManifestFile);
+ if (microManifestFile.exists()) {invoker.addLibraryManifest(microManifestFile)}}def mergingReport = invoker.merge()
+ def moduleAndroidManifest = mergingReport.getMergedDocument(MergingReport.MergedManifestKind.MERGED)
+
+ new File("$buildDir").mkdirs()
+ def file = new File("${buildDir}${File.separator}AndroidManifest.xml")
+ file.createNewFile()
+ file.write(moduleAndroidManifest)
+
+ android.sourceSets.main.aidl.srcDirs = aidlSrcDirs
+ android.sourceSets.main.assets.srcDirs = assetsSrcDirs
+ android.sourceSets.main.java.srcDirs = javaSrcDirs
+ logger.info("srcDirs:========$javaSrcDirs")
+ android.sourceSets.main.jni.srcDirs = jniSrcDirs
+ android.sourceSets.main.jniLibs.srcDirs = jniLibsSrcDirs
+ android.sourceSets.main.res.srcDirs = resSrcDirs
+ android.sourceSets.main.manifest.srcFile "${buildDir}${File.separator}AndroidManifest.xml"}*/
+/**
+ * 创建各子工程
+ */
+task createPinsDirectory {
+
+    boolean isSimple=false
+     if(project.hasProperty('isSimple')){
+         isSimple = Boolean.parseBoolean(project.getProperty('isSimple'))
+         pLogger.info("createPinsDirectory->${isSimple}\n")
+     }
+//    if (hasProperty("isSimple")) {
+
+//    }
+
+//    pLogger.info("pro:$isSimple")
+    pins.each { String pinName ->
+//        String pinDir="$projectDir${File.separator}src${File.separator}$pinName${File.separator}"
+        String pinDir = "$projectDir${File.separator}$pinName${File.separator}"
+
+        if (file(pinDir).exists()) {
+            pLogger.info("目录 ${pinName} 已经存在\n")
+        } else {
+            pLogger.info("为 ${pinName} 创建目录\n")
+            //默认包名
+            String packageName = "com${File.separator}yhbc${File.separator}${pinName.substring(pinName.indexOf('_') + 1)}"
+            String defaultPath = "src${File.separator}main${File.separator}";
+            // 创建java目录
+            new File("${pinDir}${defaultPath}java${File.separator}$packageName").mkdirs()
+            // 创建资源文件目录
+            new File("${pinDir}${defaultPath}res${File.separator}layout").mkdirs()
+            new File("${pinDir}${defaultPath}res${File.separator}values").mkdirs()
+
+            project.copy {//依赖配置 现在没用
+                from "$rootDir${File.separator}config${File.separator}micro.properties"
+                into pinDir
+            }
+            project.copy {
+                from "$rootDir${File.separator}config${File.separator}origin.gradle"
+                into pinDir
+                rename { fileName ->
+                    'build.gradle'
+                }
+            }
+            project.copy {
+                from "$rootDir${File.separator}config${File.separator}origin.properties"
+                into pinDir
+                rename { fileName ->
+                    'gradle.properties'
+                }
+            }
+            project.copy {
+                from "$rootDir${File.separator}config${File.separator}OriginalManifest.xml"
+                into "$pinDir${File.separator}src${File.separator}main"
+                rename { fileName ->
+                    'AndroidManifest.xml'
+                }
+            }
+
+            if (!isSimple) {
+                String alonePath = "src${File.separator}alone${File.separator}";
+                String alonePackage = "com${File.separator}yhbc${File.separator}alone${File.separator}";
+                new File("${pinDir}${defaultPath}api${File.separator}${packageName}api").mkdirs()
+                // 创建单独运行目录
+//            new File("${pinDir}${alonePath}java${File.separator}$alonePackage").mkdirs()
+                new File("${pinDir}${alonePath}res${File.separator}layout").mkdirs()
+                new File("${pinDir}${alonePath}res${File.separator}values").mkdirs()
+
+                project.copy {
+                    from "$rootDir${File.separator}config${File.separator}TempleManifest.xml"
+                    into "$pinDir${File.separator}src${File.separator}alone"
+                    rename { fileName ->
+                        'AndroidManifest.xml'
+                    }
+                }
+                project.copy {
+                    from "$rootDir${File.separator}config${File.separator}AloneMainActivity.java"
+                    into "$pinDir${File.separator}src${File.separator}alone${File.separator}java${File.separator}$alonePackage"
+                    rename { fileName ->
+                        'AloneMainActivity.java'
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+/**
+ * 合并清单文件
+ */
+def mergeManifest = { ->
+    new File("$buildDir").mkdirs()
+    def file = new File("$buildDir${File.separator}AndroidManifest.xml")
+    long lastTime = 0
+
+    if (file.exists()) {
+        lastTime = file.lastModified();
+    }
+    File mainManifestFile = new File("$projectDir${File.separator}src${File.separator}main${File.separator}AndroidManifest.xml")
+    //是否需要重写
+    boolean isShouldUpdate = lastTime < mainManifestFile.lastModified();
+    ManifestMerger2.MergeType mergeType = ManifestMerger2.MergeType.APPLICATION
+    XmlDocument.Type documentType = XmlDocument.Type.MAIN
+    ManifestMerger2.Invoker invoker = new ManifestMerger2.Invoker(mainManifestFile, pLogger, mergeType, documentType)
+    pins.each { String pinName ->
+        File microManifestFile = new File("$projectDir${File.separator}$pinName${File.separator}src${File.separator}main${File.separator}AndroidManifest.xml")
+        if (microManifestFile.exists()) {
+            if (!isShouldUpdate) {//已经要更新了,就不继续判断了
+                isShouldUpdate = lastTime < microManifestFile.lastModified();
+
+            }
+
+            pLogger.info("合并 ${pinName} 的 AndroidManifest.xml")
+            invoker.addLibraryManifest(microManifestFile)
+        } else {
+            pLogger.info("${pinName} 没有 AndroidManifest.xml 不需要合并")
+
+        }
+    }
+    if (isShouldUpdate) {
+        def mergingReport = invoker.merge()
+        def moduleAndroidManifest = mergingReport.getMergedDocument(MergingReport.MergedManifestKind.MERGED)
+
+        file.createNewFile()
+        try {
+            file.write(moduleAndroidManifest, "utf-8")
+        }catch(Exception e){
+            e.printStackTrace()
+        }
+
+    }
+
+    android.sourceSets.main.manifest.srcFile "${buildDir}${File.separator}AndroidManifest.xml"
+
+}
+
+
+task microModuleTask {
+    pLogger.info("microModuleTask")
+    mergeManifest()
+
+}
+/**
+ * 预处理
+ */
+preBuild.doFirst {
+    pLogger.info("microModuleTask   preBuild ")
+    mergeManifest()
+}

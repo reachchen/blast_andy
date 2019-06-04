@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="color" name="background_normal"/>
+    <attr format="color" name="background_select"/>
+    <attr format="color" name="fengexian"/>
+    <attr format="dimension" name="height"/>
+    <attr format="dimension" name="radius"/>
+    <attr format="dimension" name="strokeWidth"/>
+    <attr format="string" name="text"/>
+    <attr format="color" name="textColor_normal"/>
+    <attr format="color" name="textColor_select"/>
+    <attr format="dimension" name="textSize"/>
+    <attr format="color" name="tl_background_normal"/>
+    <attr format="color" name="tl_background_select"/>
+    <attr format="color" name="tl_divider_color"/>
+    <attr format="dimension" name="tl_divider_padding"/>
+    <attr format="dimension" name="tl_divider_width"/>
+    <attr format="integer" name="tl_indicator_anim_duration"/>
+    <attr format="boolean" name="tl_indicator_anim_enable"/>
+    <attr format="boolean" name="tl_indicator_bounce_enable"/>
+    <attr format="color" name="tl_indicator_color"/>
+    <attr format="dimension" name="tl_indicator_corner_radius"/>
+    <attr format="enum" name="tl_indicator_gravity">
+        <enum name="TOP" value="48"/>
+        <enum name="BOTTOM" value="80"/>
+    </attr>
+    <attr format="dimension" name="tl_indicator_height"/>
+    <attr format="dimension" name="tl_indicator_margin_bottom"/>
+    <attr format="dimension" name="tl_indicator_margin_left"/>
+    <attr format="dimension" name="tl_indicator_margin_right"/>
+    <attr format="dimension" name="tl_indicator_margin_top"/>
+    <attr format="dimension" name="tl_indicator_width"/>
+    <attr format="boolean" name="tl_indicator_width_equal_title"/>
+    <attr format="color" name="tl_msgColor"/>
+    <attr format="dimension" name="tl_tab_divider"/>
+    <attr format="dimension" name="tl_tab_padding"/>
+    <attr format="boolean" name="tl_tab_space_equal"/>
+    <attr format="dimension" name="tl_tab_width"/>
+    <attr format="boolean" name="tl_textAllCaps"/>
+    <attr format="enum" name="tl_textBold">
+        <enum name="NONE" value="0"/>
+        <enum name="SELECT" value="1"/>
+        <enum name="BOTH" value="2"/>
+    </attr>
+    <attr format="color" name="tl_textSelectColor"/>
+    <attr format="color" name="tl_textUnselectColor"/>
+    <attr format="dimension" name="tl_textsize"/>
+    <attr format="color" name="tl_underline_color"/>
+    <attr format="enum" name="tl_underline_gravity">
+        <enum name="TOP" value="48"/>
+        <enum name="BOTTOM" value="80"/>
+    </attr>
+    <attr format="dimension" name="tl_underline_height"/>
+    <attr format="dimension" name="width"/>
+    <color name="D1D1D1">#D1D1D1</color>
+    <color name="a242324">#242324</color>
+    <color name="a7a7a7a">#7A7A7A</color>
+    <color name="aliceblue">#f0f8ff</color>
+    <color name="alipay_input_edittext_bg_color">#fffdf7</color>
+    <color name="alipay_setting_cancel_bg_color">#d1d1d1</color>
+    <color name="alipay_setting_hint_yellow">#8a7350</color>
+    <color name="alipay_setting_save_bg_color">#f57e07</color>
+    <color name="antiquewhite">#faebd7</color>
+    <color name="aqua">#00ffff</color>
+    <color name="aquamarine">#7fffd4</color>
+    <color name="azure">#f0ffff</color>
+    <color name="back_popuwindows">#222222</color>
+    <color name="bar_bg">#e6e3e3</color>
+    <color name="base_bg">#e6dfcf</color>
+    <color name="base_bg_dialog_title">#e5ded1</color>
+    <color name="base_bg_title">#d9cfb4</color>
+    <color name="base_deep_gray">#d9c9aa</color>
+    <color name="base_light_gray">#f0ece1</color>
+    <color name="base_title_text">#37220d</color>
+    <color name="beige">#f5f5dc</color>
+    <color name="bg">#f3f3f3</color>
+    <color name="bg_gridview">#EBEBEB</color>
+    <color name="bg_gridview1">#F3F3F3</color>
+    <color name="bg_key">#dedede</color>
+    <color name="bg_logo">#191919</color>
+    <color name="bg_pay">#7DD0B1</color>
+    <color name="bg_pay_off">#C9C9C9</color>
+    <color name="bg_rg">#CCCCFF</color>
+    <color name="bg_rg1">#CCCCCC</color>
+    <color name="bg_rg2">#FFFFCC</color>
+    <color name="bg_rightmenu">#252525</color>
+    <color name="bg_scan_left">#EF6A59</color>
+    <color name="bg_scan_lv">#FFF5E5</color>
+    <color name="bg_table">#f5f5f5</color>
+    <color name="bg_taselate">#44CECECE</color>
+    <color name="bg_title">#D9D9D9</color>
+    <color name="bg_tv_title">#3B6095</color>
+    <color name="bgmenu">#FFF3EFDF</color>
+    <color name="bgradio">#CCCCCC</color>
+    <color name="bisque">#ffe4c4</color>
+    <color name="black">#000000</color>
+    <color name="black_10">#10111111</color>
+    <color name="black_11">#111111</color>
+    <color name="black_20">#20111111</color>
+    <color name="black_242324">#242324</color>
+    <color name="blanchedalmond">#ffebcd</color>
+    <color name="blue">#0000ff</color>
+    <color name="blue_00a0e9">#00a0e9</color>
+    <color name="blue_157efc">#157efc</color>
+    <color name="blue_22A9E9">#22A9E9</color>
+    <color name="blue_3485ff">#3485ff</color>
+    <color name="blue_356fc4">#356FC4</color>
+    <color name="blue_84A2C4">#84A2C4</color>
+    <color name="blue_CFEBFF">#CFEBFF</color>
+    <color name="blueviolet">#8a2be2</color>
+    <color name="board">#FFCDE1F3</color>
+    <color name="boardcolor">#d8d8d8</color>
+    <color name="boardcolors">#DCF0F7</color>
+    <color name="border_stroke">#d3d9e0</color>
+    <color name="bottom_bar_bg">#1a1919</color>
+    <color name="brown">#a52a2a</color>
+    <color name="btn_black">#333333</color>
+    <color name="btn_blue">#3190C6</color>
+    <color name="btn_blue_press">#244676</color>
+    <color name="btn_brown_press">#442F3E</color>
+    <color name="btn_gray">#D1D1D6</color>
+    <color name="btn_green">#93C631</color>
+    <color name="btn_orange">#D97658</color>
+    <color name="btn_pale_red">#EF6A59</color>
+    <color name="btn_red_press">#BF2B19</color>
+    <color name="btn_service">#8CCFB6</color>
+    <color name="btn_siver">#D9D9D9</color>
+    <color name="btn_toast">#5D6368</color>
+    <color name="btn_transer">#31C6A5</color>
+    <color name="btn_yellow">#ED9F3B</color>
+    <color name="btncolor1">#543D4D</color>
+    <color name="btncolor2">#3B6095</color>
+    <color name="bule_0a96ff">#0a96ff</color>
+    <color name="burlywood">#deb887</color>
+    <color name="button_4c4c4c">#4c4c4c</color>
+    <color name="button_color">#00A2ff</color>
+    <color name="c5c5c5">#c5c5c5</color>
+    <color name="cadetblue">#5f9ea0</color>
+    <color name="callmsg_item_boder">#FFCDCDCD</color>
+    <color name="callmsg_item_date">#FFB1B1B1</color>
+    <color name="callmsg_item_tv">#575757</color>
+    <color name="callmsg_rb">#FFF58512</color>
+    <color name="callmsg_rb_press">#ff9930</color>
+    <color name="car_displacement_checked">#ffffff</color>
+    <color name="car_displacement_unchecked">#9e998e</color>
+    <color name="car_info_a">#97C43C</color>
+    <color name="car_info_b">#4EA4C9</color>
+    <color name="car_info_c">#C49E5F</color>
+    <color name="car_info_d">#B3A679</color>
+    <color name="car_model_checked">#b9c778</color>
+    <color name="car_model_unchecked">#767676</color>
+    <color name="car_store_auction_rect">#aebe65</color>
+    <color name="character_color">#616161</color>
+    <color name="chartreuse">#7fff00</color>
+    <color name="chengse">#f48512</color>
+    <color name="chocolate">#d2691e</color>
+    <color name="click">#FDE8D0</color>
+    <color name="clickable">#ffffff</color>
+    <color name="code_textcolor">#22A9E9</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBlack">@android:color/black</color>
+    <color name="colorDialogProgressBarColor">#c67204</color>
+    <color name="colorDialogProgressRimColor">#a9a9a9</color>
+    <color name="colorDialogTest">#02d4a6</color>
+    <color name="colorDialogTest2">#ffd000</color>
+    <color name="colorDialogTextColor">#1cb3ce</color>
+    <color name="colorDialogViewBg">#a5ffffff</color>
+    <color name="colorDialogViewBg2">#ecae5700</color>
+    <color name="colorDialogWindowBg">#2aff5555</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="color_00a0e9">#00A0E9</color>
+    <color name="color_00a0ea">#00a0ea</color>
+    <color name="color_14e4e2e1">#14E4E2E1</color>
+    <color name="color_222222">#222222</color>
+    <color name="color_22ac78">#22ac78</color>
+    <color name="color_232323">#232323</color>
+    <color name="color_242324">#242324</color>
+    <color name="color_242424">#242424</color>
+    <color name="color_24abea">#24ABEA</color>
+    <color name="color_2894e0">#2894E0</color>
+    <color name="color_313131">#313131</color>
+    <color name="color_332410">#332410</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_37220d">#37220D</color>
+    <color name="color_40000000">#40000000</color>
+    <color name="color_454545">#454545</color>
+    <color name="color_57b446">#57b446</color>
+    <color name="color_5a2d14">#5A2D14</color>
+    <color name="color_5f5245">#5F5245</color>
+    <color name="color_60543b">#60543B</color>
+    <color name="color_626262">#626262</color>
+    <color name="color_6a6a6a">#6A6A6A</color>
+    <color name="color_6d6d6d">#6D6D6D</color>
+    <color name="color_7fb277">#7FB277</color>
+    <color name="color_7fcff4">#7FCFF4</color>
+    <color name="color_806a4a">#806A4A</color>
+    <color name="color_897250">#897250</color>
+    <color name="color_8a7350">#8A7350</color>
+    <color name="color_8d8375">#8D8375</color>
+    <color name="color_967864">#967864</color>
+    <color name="color_96c7bfa1">#96c7bfa1</color>
+    <color name="color_99000000">#99000000</color>
+    <color name="color_E6DCC8">#E6DCC8</color>
+    <color name="color_F2EDE7">#f2ede7</color>
+    <color name="color_a77341">#A77341</color>
+    <color name="color_a7734e">#A7734E</color>
+    <color name="color_aaa5a0">#aaa5a0</color>
+    <color name="color_ac9d88">#AC9D88</color>
+    <color name="color_b3ab91">#B3AB91</color>
+    <color name="color_b9bb9b">#b9bb9b</color>
+    <color name="color_baa478">#BAA478</color>
+    <color name="color_bfbfbf">#BFBFBF</color>
+    <color name="color_c2c2c2">#C2C2C2</color>
+    <color name="color_c3986d">#C3986D</color>
+    <color name="color_c3996d">#c3996d</color>
+    <color name="color_c5976c">#C5976C</color>
+    <color name="color_c6bfa2">#c6bfa2</color>
+    <color name="color_c7bfa1">#C7BFA1</color>
+    <color name="color_c7c1ad">#C7C1AD</color>
+    <color name="color_c8bfa2">#c8bfa2</color>
+    <color name="color_cacaca">#CACACA</color>
+    <color name="color_cbc9c9">#CBC9C9</color>
+    <color name="color_cbcaca">#CBCACA</color>
+    <color name="color_d1d1d1">#D1D1D1</color>
+    <color name="color_d2d2d2">#D2D2D2</color>
+    <color name="color_d3d1d7">#D3D1D7</color>
+    <color name="color_d8d2bd">#D8D2BD</color>
+    <color name="color_d8d8d8">#D8D8D8</color>
+    <color name="color_d8ffffff">#D8FFFFFF</color>
+    <color name="color_d9c9aa">#D9C9AA</color>
+    <color name="color_d9cfb4">#D9CFB4</color>
+    <color name="color_d9d9d9">#d9d9d9</color>
+    <color name="color_dcb95f">#dcb95f</color>
+    <color name="color_dcdcdb">#DCDCDB</color>
+    <color name="color_dcdcdc">#dcdcdc</color>
+    <color name="color_dea543">#DEA543</color>
+    <color name="color_e0ece1">#E0ECE1</color>
+    <color name="color_e3e3e3">#E3E3E3</color>
+    <color name="color_e4e4e4">#E4E4E4</color>
+    <color name="color_e55644">#E55644</color>
+    <color name="color_e5ded1">#e5ded1</color>
+    <color name="color_e5dfce">#e5dfce</color>
+    <color name="color_e5dfd0">#E5DFD0</color>
+    <color name="color_e68333">#E68333</color>
+    <color name="color_e6d0bc">#E6D0BC</color>
+    <color name="color_e6dcc8">#e6dcc8</color>
+    <color name="color_e6dfcf">#E6DFCF</color>
+    <color name="color_e6e6df">#E6E6DF</color>
+    <color name="color_e6e6e6">#e6e6e6</color>
+    <color name="color_e75d4b">#E75D4B</color>
+    <color name="color_e8b050">#E8B050</color>
+    <color name="color_e8e8e8">#E8E8E8</color>
+    <color name="color_e9723d">#E9723D</color>
+    <color name="color_eae4d7">#EAE4D7</color>
+    <color name="color_eaebea">#eaebea</color>
+    <color name="color_ec432e">#EC432E</color>
+    <color name="color_edebeb">#EDEBEB</color>
+    <color name="color_ef5b48">#EF5B48</color>
+    <color name="color_efebe0">#EFEBE0</color>
+    <color name="color_f0a075">#F0A075</color>
+    <color name="color_f0ece1">#F0ECE1</color>
+    <color name="color_f0f0f0">#F0F0F0</color>
+    <color name="color_f24e3e">#f24e3e</color>
+    <color name="color_f48512">#F48512</color>
+    <color name="color_f57e07">#F57E07</color>
+    <color name="color_f58c61">#f58c61</color>
+    <color name="color_f5f6f3">#F5F6F3</color>
+    <color name="color_f6770c">#f6770c</color>
+    <color name="color_f67a0e">#f67a0e</color>
+    <color name="color_f6f6f5">#f6f6f5</color>
+    <color name="color_f6f6f6">#f6f6f6</color>
+    <color name="color_f8711c">#F8711C</color>
+    <color name="color_f8721a">#F8721A</color>
+    <color name="color_f8f6f5">#F8F6F5</color>
+    <color name="color_f8f8f8">#F8F8F8</color>
+    <color name="color_f9513f">#F9513F</color>
+    <color name="color_f95141">#F95141</color>
+    <color name="color_f96929">#F96929</color>
+    <color name="color_f96b25">#f96b25</color>
+    <color name="color_f96b26">#f96b26</color>
+    <color name="color_f96d23">#F96D23</color>
+    <color name="color_f99567">#F99567</color>
+    <color name="color_fa5041">#FA5041</color>
+    <color name="color_fa6a28">#FA6A28</color>
+    <color name="color_fa6b27">#FA6B27</color>
+    <color name="color_fa7353">#fa7353</color>
+    <color name="color_fa7814">#fa7814</color>
+    <color name="color_fa9568">#fa9568</color>
+    <color name="color_fafafa">#FAFAFA</color>
+    <color name="color_fbfbfb">#FBFBFB</color>
+    <color name="color_fc5042">#FC5042</color>
+    <color name="color_fce4d6">#fce4d6</color>
+    <color name="color_ff6359">#FF6359</color>
+    <color name="color_fffdf7">#FFFDF7</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_null">#00000000</color>
+    <color name="coral">#ff7f50</color>
+    <color name="cornflowerblue">#6495ed</color>
+    <color name="cornsilk">#fff8dc</color>
+    <color name="crimson">#dc143c</color>
+    <color name="cyan">#00ffff</color>
+    <color name="cyan_86890c">#86890c</color>
+    <color name="cyan_8e910d">#8E910D</color>
+    <color name="cyan_f0f3e3">#f0f3e3</color>
+    <color name="darkblue">#00008b</color>
+    <color name="darkcyan">#008b8b</color>
+    <color name="darkgoldenrod">#b8860b</color>
+    <color name="darkgray">#a9a9a9</color>
+    <color name="darkgreen">#006400</color>
+    <color name="darkgrey">#a9a9a9</color>
+    <color name="darkkhaki">#bdb76b</color>
+    <color name="darkmagenta">#8b008b</color>
+    <color name="darkolivegreen">#556b2f</color>
+    <color name="darkorange">#ff8c00</color>
+    <color name="darkorchid">#9932cc</color>
+    <color name="darkred">#8b0000</color>
+    <color name="darksalmon">#e9967a</color>
+    <color name="darkseagreen">#8fbc8f</color>
+    <color name="darkslateblue">#483d8b</color>
+    <color name="darkslategray">#2f4f4f</color>
+    <color name="darkslategrey">#2f4f4f</color>
+    <color name="darkturquoise">#00ced1</color>
+    <color name="darkviolet">#9400d3</color>
+    <color name="deeppink">#ff1493</color>
+    <color name="deepskyblue">#00bfff</color>
+    <color name="dialog_pay">#544747</color>
+    <color name="dimgray">#696969</color>
+    <color name="dimgrey">#696969</color>
+    <color name="disable">#7f8183</color>
+    <color name="divider_color">#C8C7CC</color>
+    <color name="divider_color_cac8c8">#CAC8C8</color>
+    <color name="dodgerblue">#1e90ff</color>
+    <color name="et_line">#CECECE</color>
+    <color name="f4f4f4">#f4f4f4</color>
+    <color name="firebrick">#b22222</color>
+    <color name="floralwhite">#fffaf0</color>
+    <color name="forestgreen">#228b22</color>
+    <color name="fuchsia">#ff00ff</color>
+    <color name="gainsboro">#dcdcdc</color>
+    <color name="gery_e3e3e3">#e3e3e3</color>
+    <color name="get_order_select_bg">#FFEDED</color>
+    <color name="ghostwhite">#f8f8ff</color>
+    <color name="gold">#ffd700</color>
+    <color name="goldenrod">#daa520</color>
+    <color name="good_manage_add_sort_bg_color">#f0f0f0</color>
+    <color name="good_manage_sort_area_bg_color">#f0ece1</color>
+    <color name="gray">#808080</color>
+    <color name="gray_6c6c6c">#6c6c6c</color>
+    <color name="gray_circle">#B8B8B8</color>
+    <color name="gray_unenable">#d2d1d7</color>
+    <color name="green">#008000</color>
+    <color name="green1">#85880C</color>
+    <color name="green_09bb07">#09bb07</color>
+    <color name="green_346EC4">#346EC4</color>
+    <color name="green_86890c">#86890c</color>
+    <color name="greenyellow">#adff2f</color>
+    <color name="grey">#808080</color>
+    <color name="grey1">#999999</color>
+    <color name="grey2">#F3F3F3</color>
+    <color name="grey3">#666666</color>
+    <color name="grey_332410">#332410</color>
+    <color name="grey_333333">#333333</color>
+    <color name="grey_404343">#404343</color>
+    <color name="grey_44ADB48B">#44ADB48B</color>
+    <color name="grey_525252">#525252</color>
+    <color name="grey_545454">#545454</color>
+    <color name="grey_5f5245">#5f5245</color>
+    <color name="grey_60000000">#60000000</color>
+    <color name="grey_666666">#666666</color>
+    <color name="grey_6c6c6c">#6c6c6c</color>
+    <color name="grey_757677">#ff757677</color>
+    <color name="grey_888888">#888888</color>
+    <color name="grey_8e8e8e">#8e8e8e</color>
+    <color name="grey_8f8f8f">#8f8f8f</color>
+    <color name="grey_90666666">#90111111</color>
+    <color name="grey_999999">#999999</color>
+    <color name="grey_9a9a9a">#9a9a9a</color>
+    <color name="grey_9e998e">#9e998e</color>
+    <color name="grey_aaaaaa">#aaaaaa</color>
+    <color name="grey_b2b2b2">#b2b2b2</color>
+    <color name="grey_bcb6b6">#bcb6b6</color>
+    <color name="grey_cccccc">#CCCCCC</color>
+    <color name="grey_dddddd">#dddddd</color>
+    <color name="grey_e6e6e6">#e6e6e6</color>
+    <color name="grey_e7e7e7">#E7E7E7</color>
+    <color name="grey_e8e8e8">#E8E8E8</color>
+    <color name="grey_ededed">#ededed</color>
+    <color name="grey_eeeeee">#eeeeee</color>
+    <color name="grey_f3f3f3">#F3F3F3</color>
+    <color name="grey_f4f4f3">#f4f4f3</color>
+    <color name="grey_f7f7f7">#F7F7F7</color>
+    <color name="grey_more">#eeeecc</color>
+    <color name="grey_pay_textcolor">#242324</color>
+    <color name="gvprice">#EC432E</color>
+    <color name="gvtext">#72C2A4</color>
+    <color name="half_black">#7F000000</color>
+    <color name="hint">#C7C7C7</color>
+    <color name="honeydew">#f0fff0</color>
+    <color name="hotpink">#ff69b4</color>
+    <color name="indianred">#cd5c5c</color>
+    <color name="indigo">#4b0082</color>
+    <color name="input_alipay_account_hint_yellow">#ac9d88</color>
+    <color name="ipcolor">#009933</color>
+    <color name="item_good_estimate_operation_bg_color">#e6dcc8</color>
+    <color name="item_good_setting_bg_color">#c3996c</color>
+    <color name="ivory">#fffff0</color>
+    <color name="key_bard_bg">#DBDBDB</color>
+    <color name="khaki">#f0e68c</color>
+    <color name="lavender">#e6e6fa</color>
+    <color name="lavenderblush">#fff0f5</color>
+    <color name="lawngreen">#7cfc00</color>
+    <color name="left_bg">#252525</color>
+    <color name="left_bg_pressed">#4D4E50</color>
+    <color name="lemonchiffon">#fffacd</color>
+    <color name="lightblue">#add8e6</color>
+    <color name="lightcoral">#f08080</color>
+    <color name="lightcyan">#e0ffff</color>
+    <color name="lightgoldenrodyellow">#fafad2</color>
+    <color name="lightgray">#d3d3d3</color>
+    <color name="lightgreen">#90ee90</color>
+    <color name="lightgrey">#d3d3d3</color>
+    <color name="lightpink">#ffb6c1</color>
+    <color name="lightsalmon">#ffa07a</color>
+    <color name="lightseagreen">#20b2aa</color>
+    <color name="lightskyblue">#87cefa</color>
+    <color name="lightslategray">#778899</color>
+    <color name="lightslategrey">#778899</color>
+    <color name="lightsteelblue">#b0c4de</color>
+    <color name="lightyellow">#ffffe0</color>
+    <color name="lime">#00ff00</color>
+    <color name="limegreen">#32cd32</color>
+    <color name="line">#C8C7CC</color>
+    <color name="linen">#faf0e6</color>
+    <color name="list_border">#000000</color>
+    <color name="list_divider">#CAC8C8</color>
+    <color name="list_textcolor">#1A1A1A</color>
+    <color name="littlegray">#d9d9d9</color>
+    <color name="littlegrey">#cccccc</color>
+    <color name="littlered">#ec4321</color>
+    <color name="lock_food_when_shelf_down_color">#b3aca0</color>
+    <color name="login_status_bar">#131925</color>
+    <color name="lvse">#6cb71e</color>
+    <color name="magenta">#ff00ff</color>
+    <color name="maroon">#800000</color>
+    <color name="mediumaquamarine">#66cdaa</color>
+    <color name="mediumblue">#0000cd</color>
+    <color name="mediumorchid">#ba55d3</color>
+    <color name="mediumpurple">#9370db</color>
+    <color name="mediumseagreen">#3cb371</color>
+    <color name="mediumslateblue">#7b68ee</color>
+    <color name="mediumspringgreen">#00fa9a</color>
+    <color name="mediumturquoise">#48d1cc</color>
+    <color name="mediumvioletred">#c71585</color>
+    <color name="menu_bg_selector">#161818</color>
+    <color name="midnightblue">#191970</color>
+    <color name="mintcream">#f5fffa</color>
+    <color name="mistyrose">#ffe4e1</color>
+    <color name="mn_colorDialogImageTintColor">#ffffff</color>
+    <color name="mn_colorDialogProgressBarColor">#ffffff</color>
+    <color name="mn_colorDialogTextColor">#ffffff</color>
+    <color name="mn_colorDialogTrans">#00000000</color>
+    <color name="mn_colorDialogViewBg">#dd000000</color>
+    <color name="mn_colorDialogWindowBg">#00000000</color>
+    <color name="moccasin">#ffe4b5</color>
+    <color name="navajowhite">#ffdead</color>
+    <color name="navy">#000080</color>
+    <color name="newcar_icon_label">#55ff6600</color>
+    <color name="noticecolor">#5A5A5A</color>
+    <color name="oldlace">#fdf5e6</color>
+    <color name="olive">#808000</color>
+    <color name="olivedrab">#6b8e23</color>
+    <color name="online_icon_label">#55a251b7</color>
+    <color name="online_qrcode_select_btn_boundary_color">#c7bfa1</color>
+    <color name="orange">#ffa500</color>
+    <color name="orange_6f6f6f">#6f6f6f</color>
+    <color name="orange_ff6633">#ff6633</color>
+    <color name="orange_ff8259">#ff8259</color>
+    <color name="orange_ff8d1f">#ff8d1f</color>
+    <color name="orangered">#ff4500</color>
+    <color name="orchid">#da70d6</color>
+    <color name="pale_red">#FBF1F1</color>
+    <color name="palegoldenrod">#eee8aa</color>
+    <color name="palegreen">#98fb98</color>
+    <color name="paleturquoise">#afeeee</color>
+    <color name="palevioletred">#db7093</color>
+    <color name="papayawhip">#ffefd5</color>
+    <color name="paymethod">#aa8CCFB6</color>
+    <color name="paymodel_color">#99242324</color>
+    <color name="peachpuff">#ffdab9</color>
+    <color name="peru">#cd853f</color>
+    <color name="pink">#ffc0cb</color>
+    <color name="plum">#dda0dd</color>
+    <color name="powderblue">#b0e0e6</color>
+    <color name="province_line_border">#D0D0D0</color>
+    <color name="pull_check">#fde7d0</color>
+    <color name="purple">#800080</color>
+    <color name="purpleblue">#2D4C7A</color>
+    <color name="radio_btn_checked">#898d0d</color>
+    <color name="radio_btn_unchecked">#ffffff</color>
+    <color name="realtime_icon_label">#5500bfc9</color>
+    <color name="red">#ff0000</color>
+    <color name="red_ce231d">#ce231d</color>
+    <color name="red_checked_fadbda">#fadbda</color>
+    <color name="red_d90000">#D90000</color>
+    <color name="red_fa4041">#fa5041</color>
+    <color name="red_ff">#FF0000</color>
+    <color name="red_ff4943">#ff4943</color>
+    <color name="red_query">#FA5041</color>
+    <color name="reserve_lock">#9778BA</color>
+    <color name="rightBlack">#3e3e3e</color>
+    <color name="rosybrown">#bc8f8f</color>
+    <color name="royalblue">#4169e1</color>
+    <color name="saddlebrown">#8b4513</color>
+    <color name="salmon">#fa8072</color>
+    <color name="sandybrown">#f4a460</color>
+    <color name="seaShell">#fff5ee</color>
+    <color name="seagreen">#2e8b57</color>
+    <color name="selected">#D9781E</color>
+    <color name="setting_title">#78BFA5</color>
+    <color name="sienna">#a0522d</color>
+    <color name="silver">#c0c0c0</color>
+    <color name="skyblue">#87ceeb</color>
+    <color name="slateblue">#6a5acd</color>
+    <color name="slategray">#708090</color>
+    <color name="slategrey">#708090</color>
+    <color name="snow">#fffafa</color>
+    <color name="springgreen">#00ff7f</color>
+    <color name="steelblue">#4682b4</color>
+    <color name="sub_winbox">#30363A</color>
+    <color name="t_driver_blue">#33B5E5</color>
+    <color name="t_driver_purple">#FD3CFD</color>
+    <color name="tab_selected_bg">#66FFFF</color>
+    <color name="tan">#d2b48c</color>
+    <color name="taste_menu_item_fff7f7">#ffefef</color>
+    <color name="teal">#008080</color>
+    <color name="text">#737373</color>
+    <color name="text_black">#222222</color>
+    <color name="text_blue">#258de2</color>
+    <color name="text_color_settlement">#313131</color>
+    <color name="text_gray">#6d6d6d</color>
+    <color name="text_red">#fc4545</color>
+    <color name="text_soldout">#929292</color>
+    <color name="text_tip_sty">#FF6611</color>
+    <color name="text_unselected">#959595</color>
+    <color name="textcolor">@color/text_black</color>
+    <color name="textcolor222">#bbb</color>
+    <color name="textcolor222222">#222222</color>
+    <color name="textcolor333333">#333333</color>
+    <color name="textcolor6d6d6d">#6D6D6D</color>
+    <color name="textcolor999">#999</color>
+    <color name="textcolor_242324">#242324</color>
+    <color name="thistle">#d8bfd8</color>
+    <color name="titlecolors">#0A96F0</color>
+    <color name="titlecolors_bar">#ff6611</color>
+    <color name="toast_background">#bb212121</color>
+    <color name="tomato">#ff6347</color>
+    <color name="translate_textcolor">#886D6D6D</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent40">#66000000</color>
+    <color name="transparent4066">#40666666</color>
+    <color name="transparent50">#50ffffff</color>
+    <color name="transparent50f">#50ffffff</color>
+    <color name="transparent_22">#22000000</color>
+    <color name="transparent_33">#33000000</color>
+    <color name="transparent_40">#40000000</color>
+    <color name="transparent_55">#55000000</color>
+    <color name="transparent_blue_55">#550000ff</color>
+    <color name="transparent_dd">#dd000000</color>
+    <color name="transparent_green_55">#5500ff00</color>
+    <color name="transparent_orange">#78ff6600</color>
+    <color name="turquoise">#40e0d0</color>
+    <color name="tv_note">#ACACAC</color>
+    <color name="tv_sync_success">#1e9e49</color>
+    <color name="usedcar_icon_label">#55d90000</color>
+    <color name="user">#B1B1B1</color>
+    <color name="user_info">#6D6D6D</color>
+    <color name="view_color_settlement">#E7E7E7</color>
+    <color name="violet">#ee82ee</color>
+    <color name="water_red">#FF5152</color>
+    <color name="wechat_setting_cancel_text_color">#5f5245</color>
+    <color name="wechat_setting_select_picture_color">#fa6a28</color>
+    <color name="wechat_setting_select_picture_tv_color">#f0ece1</color>
+    <color name="wheat">#f5deb3</color>
+    <color name="white">#ffffff</color>
+    <color name="white_f8f8f8">#f8f8f8</color>
+    <color name="white_foece1">#f0ece1</color>
+    <color name="white_trans">#55FFFFFF</color>
+    <color name="white_trans99">#99FFFFFF</color>
+    <color name="whitesmoke">#f5f5f5</color>
+    <color name="yellow">#ffff00</color>
+    <color name="yellow_a77341">#a77341</color>
+    <color name="yellow_black">#F0ECE1</color>
+    <color name="yellow_dcdc17">#DCDC17</color>
+    <color name="yellow_ff8000">#ff8000</color>
+    <color name="yellow_setting">#e6dfcf</color>
+    <declare-styleable name="CommonTabLayout"><attr name="tl_background_normal"/><attr name="tl_background_select"/><attr name="tl_indicator_color"/><attr name="tl_indicator_height"/><attr name="tl_indicator_width"/><attr name="tl_indicator_margin_left"/><attr name="tl_indicator_margin_top"/><attr name="tl_indicator_margin_right"/><attr name="tl_indicator_margin_bottom"/><attr name="tl_indicator_corner_radius"/><attr name="tl_indicator_gravity"/><attr name="tl_indicator_anim_enable"/><attr name="tl_indicator_anim_duration"/><attr name="tl_indicator_bounce_enable"/><attr name="tl_underline_color"/><attr name="tl_underline_height"/><attr name="tl_underline_gravity"/><attr name="tl_divider_color"/><attr name="tl_divider_width"/><attr name="tl_divider_padding"/><attr name="tl_tab_divider"/><attr name="tl_tab_padding"/><attr name="tl_tab_space_equal"/><attr name="tl_tab_width"/><attr name="tl_textsize"/><attr name="tl_textSelectColor"/><attr format="color" name="tl_mMsgUnSelectColor"/><attr name="tl_textUnselectColor"/><attr name="tl_msgColor"/><attr name="tl_textBold"/><attr name="tl_textAllCaps"/><attr format="dimension" name="tl_iconWidth"/><attr format="dimension" name="tl_iconHeight"/><attr format="boolean" name="tl_iconVisible"/><attr format="enum" name="tl_iconGravity">
+            <enum name="LEFT" value="3"/>
+            <enum name="TOP" value="48"/>
+            <enum name="RIGHT" value="5"/>
+            <enum name="BOTTOM" value="80"/>
+        </attr><attr format="dimension" name="tl_iconMargin"/><attr format="dimension" name="tl_textMarginBottom"/></declare-styleable>
+    <declare-styleable name="CustomInputEditText"><attr format="boolean" name="isShowIcon"/><attr format="boolean" name="isClickRight"/></declare-styleable>
+    <declare-styleable name="DrawableCenterTextView"><attr name="orientation">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr></declare-styleable>
+    <declare-styleable name="DrawableSizeEditView"><attr format="dimension" name="edit_drawable_sizes"/><attr format="reference" name="edit_drawable_top"/><attr format="reference" name="edit_drawable_left"/><attr format="reference" name="edit_drawable_right"/><attr format="reference" name="edit_drawable_bottom"/></declare-styleable>
+    <declare-styleable name="DrawableSizeTextView"><attr format="dimension" name="drawableSizes"/><attr format="reference" name="drawableTop"/><attr format="reference" name="drawableLeft"/><attr format="reference" name="drawableRight"/><attr format="reference" name="drawableBottom"/></declare-styleable>
+    <declare-styleable name="MsgView"><attr format="color" name="mv_backgroundColor"/><attr format="dimension" name="mv_cornerRadius"/><attr format="dimension" name="mv_strokeWidth"/><attr format="color" name="mv_strokeColor"/><attr format="boolean" name="mv_isRadiusHalfHeight"/><attr format="boolean" name="mv_isWidthHeightEqual"/></declare-styleable>
+    <declare-styleable name="PercentLayout_Layout"><attr format="fraction" name="layout_widthPercent"/><attr format="fraction" name="layout_heightPercent"/><attr format="fraction" name="layout_marginPercent"/><attr format="fraction" name="layout_marginLeftPercent"/><attr format="fraction" name="layout_marginTopPercent"/><attr format="fraction" name="layout_marginRightPercent"/><attr format="fraction" name="layout_marginBottomPercent"/><attr format="fraction" name="layout_marginStartPercent"/><attr format="fraction" name="layout_marginEndPercent"/><attr format="fraction" name="layout_aspectRatio"/></declare-styleable>
+    <declare-styleable name="SelectButton"><attr name="width"/><attr name="height"/><attr name="strokeWidth"/><attr name="radius"/><attr name="background_normal"/><attr name="background_select"/><attr name="fengexian"/><attr name="textColor_normal"/><attr name="textColor_select"/><attr name="textSize"/><attr name="text"/></declare-styleable>
+    <declare-styleable name="TitleBarLayout"><attr format="boolean" name="showTitle"/><attr format="boolean" name="showMore"/><attr format="boolean" name="showBack"/><attr format="boolean" name="showBackByText"/><attr format="boolean" name="showPrint"/><attr format="boolean" name="showRight"/><attr format="reference" name="moreIcon"/><attr format="reference" name="backIcon"/><attr format="reference" name="deriveIcon"/><attr format="string" name="titleText"/><attr format="string" name="rightText"/><attr format="string" name="leftText"/><attr format="color" name="bgColor"/></declare-styleable>
+    <declare-styleable name="TitleDialogLayout"><attr format="string" name="dialog_title"/></declare-styleable>
+    <declare-styleable name="TitleLayout"><attr format="string" name="title"/></declare-styleable>
+    <declare-styleable name="TitleSearchLayout"><attr format="boolean" name="backSearch"/><attr format="reference" name="backImg"/><attr format="color" name="bgSearchColor"/><attr format="boolean" name="etSearchShow"/><attr format="string" name="hintText"/></declare-styleable>
+    <declare-styleable name="TitleSelectLayout"><attr format="string" name="leftTitleText"/><attr format="string" name="rightTitleText"/><attr format="boolean" name="showSelectBack"/><attr format="boolean" name="showAdd"/><attr format="reference" name="addIcon"/><attr format="reference" name="searchIcon"/><attr format="boolean" name="showSearch"/><attr format="string" name="backText"/><attr format="integer" name="backTextSize"/><attr format="color" name="backgroundColor"/></declare-styleable>
+    <declare-styleable name="vericationCodeInput"><attr format="integer" name="box"/><attr format="dimension" name="child_h_padding"/><attr format="dimension" name="child_v_padding"/><attr format="dimension" name="child_width"/><attr format="dimension" name="child_height"/><attr format="dimension" name="padding"/><attr format="reference" name="box_bg_focus"/><attr format="reference" name="box_bg_normal"/><attr format="string" name="inputType"/></declare-styleable>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="pay_keyboard_stroke">@dimen/x1</dimen>
+    <dimen name="top_height_full">@dimen/y90</dimen>
+    <dimen name="winbox_line_1">@dimen/x1</dimen>
+    <dimen name="winbox_px_22">@dimen/y22</dimen>
+    <dimen name="winbox_px_24">@dimen/y24</dimen>
+    <dimen name="winbox_px_26">@dimen/y26</dimen>
+    <dimen name="winbox_px_28">@dimen/y28</dimen>
+    <dimen name="winbox_px_30">@dimen/y30</dimen>
+    <dimen name="winbox_px_32">@dimen/y32</dimen>
+    <dimen name="winbox_px_34">@dimen/y34</dimen>
+    <dimen name="winbox_px_36">@dimen/y36</dimen>
+    <dimen name="winbox_px_38">@dimen/y38</dimen>
+    <dimen name="winbox_px_40">@dimen/y40</dimen>
+    <dimen name="winbox_px_48">@dimen/y48</dimen>
+    <drawable name="transparent_background">#00000000</drawable>
+    <item name="statusbarutil_fake_status_bar_view" type="id"/>
+    <item name="statusbarutil_translucent_view" type="id"/>
+    <string name="app_name">Base</string>
+    <string name="base_back">返回</string>
+    <string name="btn_admit">确认</string>
+    <string name="btn_cancel">取消</string>
+    <string name="continue_checkout">继续结账</string>
+    <string name="leave_this_page">离开此页</string>
+    <string name="save">保存</string>
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">@dimen/y36</item>
+    </style>
+    <style name="base_AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:screenOrientation">landscape</item>
+        <item name="android:launchMode">singleTask</item>
+        <item name="android:windowSoftInputMode">adjustPan|stateHidden</item>
+        <item name="colorAccent">@color/color_fa6a28</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="base_back_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/base_title_text</item>
+        <item name="android:textSize">@dimen/y42</item>
+        <item name="android:text">@string/base_back</item>
+    </style>
+    <style name="base_background">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/base_bg</item>
+    </style>
+    <style name="base_bg_dialog_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/x90</item>
+        <item name="android:background">@drawable/common_dialog_title_bg</item>
+    </style>
+    <style name="base_bg_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/y128</item>
+        <item name="android:background">@color/base_bg_title</item>
+    </style>
+    <style name="base_common_edittext">
+        <item name="android:paddingLeft">@dimen/y21</item>
+        <item name="android:paddingRight">@dimen/y21</item>
+        <item name="android:paddingTop">@dimen/x28</item>
+        <item name="android:paddingBottom">@dimen/x28</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/x88</item>
+        <item name="android:background">@drawable/base_bg_edittext</item>
+        <item name="android:textColorHint">@color/color_ac9d88</item>
+        <item name="android:textColor">@color/base_eidttext_enable</item>
+        <item name="android:textSize">@dimen/x34</item>
+    </style>
+    <style name="base_dialog_payback" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="base_grey_btn">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/color_5f5245</item>
+        <item name="android:textSize">@dimen/y34</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/common_gradient_gray_btn_selector</item>
+    </style>
+    <style name="base_text_32">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_332410</item>
+        <item name="android:textSize">@dimen/x32</item>
+    </style>
+    <style name="base_text_34">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_332410</item>
+        <item name="android:textSize">@dimen/x34</item>
+    </style>
+    <style name="base_text_36">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_332410</item>
+        <item name="android:textSize">@dimen/y36</item>
+    </style>
+    <style name="base_text_desc_32">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_5f5245</item>
+        <item name="android:textSize">@dimen/y32</item>
+    </style>
+    <style name="base_title_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/base_title_text</item>
+        <item name="android:textSize">@dimen/x42</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="base_yellow_btn">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/y34</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/common_gradient_btn_selector</item>
+    </style>
+    <style name="common_choose_input">
+        <item name="android:layout_width">@dimen/x510</item>
+        <item name="android:layout_height">@dimen/x88</item>
+        <item name="android:textColor">@color/color_332410</item>
+        <item name="android:textColorHint">@color/color_ac9d88</item>
+        <item name="android:textSize">@dimen/x34</item>
+        <item name="android:background">@drawable/common_bg_input_x8</item>
+        <item name="android:paddingLeft">@dimen/x21</item>
+    </style>
+    <style name="common_one_text_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊 Dialog本身清晰，Activity界面内容模糊 -->
+        <item name="android:windowIsTranslucent">false</item><!-- 半透明 -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item><!-- 定义contentoverlay的背景的 -->
+    </style>
+    <style name="custom_dialog2" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 去除黑色边框的关键设置项 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 屏幕背景是否变暗 -->
+        <item name="android:backgroundDimAmount">0.3</item>
+    </style>
+    <style name="dialog_black" parent="@style/dialog_text">
+        <item name="android:textSize">@dimen/y40</item>
+        <item name="android:textColor">@color/color_332410</item>
+    </style>
+    <style name="dialog_noTitle2" parent="android:style/Theme.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowSoftInputMode">stateVisible</item>
+    </style>
+    <style name="dialog_text">
+        <item name="android:layout_height">@dimen/x90</item>
+        <item name="android:textColor">@color/color_332410</item>
+        <item name="android:textSize">@dimen/x34</item>
+        <item name="android:lines">1</item>
+        <item name="android:textColorHint">@color/grey1</item>
+        <item name="android:ellipsize">end</item>
+
+    </style>
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="login_dialog_base" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="pay_keyboard_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@drawable/pay_btn_keyboard_white</item>
+        <item name="android:textColor">@color/color_332410</item>
+        <item name="android:textSize">@dimen/y44</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="reserve_num_keyboard_base">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_332410</item>
+        <item name="android:textSize">@dimen/y44</item>
+        <item name="android:background">@drawable/common_keyboard</item>
+    </style>
+</resources>

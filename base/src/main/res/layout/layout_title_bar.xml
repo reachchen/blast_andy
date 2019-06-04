@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/img_title_bar_back"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/press_bg_selector"
+        android:scaleType="center"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_title_bar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@drawable/press_bg_selector"
+        android:drawableLeft="@mipmap/back_icon"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/textcolor333333"
+        android:textSize="15dp"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/tv_title_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/textcolor333333"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/img_title_bar_more"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/press_bg_selector"
+        android:scaleType="center"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/img_title_bar_print"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/press_bg_selector"
+        android:scaleType="center"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_title_bar_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/press_bg_selector"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/textcolor333333"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

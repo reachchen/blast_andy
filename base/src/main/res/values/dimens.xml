@@ -1,0 +1,20 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="top_height_full">@dimen/y90</dimen>
+    <!-- 字体大小 可以统一换成x或者y-->
+    <dimen name="winbox_px_22">@dimen/y22</dimen>
+    <dimen name="winbox_px_24">@dimen/y24</dimen>
+    <dimen name="winbox_px_26">@dimen/y26</dimen>
+    <dimen name="winbox_px_28">@dimen/y28</dimen>
+    <dimen name="winbox_px_30">@dimen/y30</dimen>
+    <dimen name="winbox_px_32">@dimen/y32</dimen>
+    <dimen name="winbox_px_34">@dimen/y34</dimen>
+    <dimen name="winbox_px_36">@dimen/y36</dimen>
+    <dimen name="winbox_px_38">@dimen/y38</dimen>
+    <dimen name="winbox_px_40">@dimen/y40</dimen>
+    <dimen name="winbox_px_48">@dimen/y48</dimen>
+    <dimen name="pay_keyboard_stroke">@dimen/x1</dimen>
+    <dimen name="winbox_line_1">@dimen/x1</dimen>
+</resources>

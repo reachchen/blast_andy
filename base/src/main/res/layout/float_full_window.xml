@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/window_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/littlegray"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_tell"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height_full"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2px"
+        android:layout_marginLeft="2px"
+        android:layout_marginRight="2px"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textColor="@color/list_textcolor"
+        android:text="@string/app_name"
+        android:textSize="@dimen/y35" />
+
+    <LinearLayout
+        android:id="@+id/ll_full_small"
+        android:layout_width="@dimen/y80"
+        android:layout_height="@dimen/top_height_full"
+        android:layout_toLeftOf="@+id/ll_view_line"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_full_small"
+            android:layout_width="@dimen/y42"
+            android:layout_height="@dimen/y33"
+            android:background="@mipmap/ic_bard_full" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_view_line"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/top_height_full"
+        android:layout_toLeftOf="@+id/ll_close"
+        android:gravity="center">
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_marginTop="@dimen/y20"
+            android:layout_toLeftOf="@+id/ll_close"
+            android:background="@color/littlegray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_close"
+        android:layout_width="@dimen/y80"
+        android:layout_height="@dimen/top_height_full"
+        android:layout_alignParentRight="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="@dimen/y42"
+            android:layout_height="@dimen/y26"
+            android:background="@mipmap/ic_bard_close" />
+    </LinearLayout>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tell"
+        android:background="@color/littlegray"
+        android:focusable="true"
+        android:padding="1px"
+        android:verticalCorrection="0px"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@drawable/key_white_btn"
+        android:keyPreviewLayout="@layout/key_preview_layout"
+        android:keyTextColor="@color/list_textcolor"
+        android:keyTextSize="@dimen/y35"
+        android:shadowColor="@color/transparent" />
+
+</RelativeLayout>

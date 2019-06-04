@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--底色-->
+    <solid android:color="@color/color_fffdf7" />
+    <!--角度-->
+    <corners android:radius="@dimen/y8" />
+    <!--边线-->
+    <stroke
+        android:width="@dimen/y1"
+        android:color="@color/color_c7bfa1" />
+</shape><!-- edit round8背景 -->

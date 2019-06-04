@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <!--底色-->
+            <gradient android:angle="90"  android:startColor="@color/color_d2d2d2"
+                android:endColor="@color/color_d2d2d2" />
+            <!--角度-->
+            <corners android:radius="@dimen/x8" />
+            <!--边线-->
+            <stroke android:width="@dimen/x1" android:color="@color/color_c7bfa1" />
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <!--底色-->
+            <gradient android:angle="90"  android:startColor="@color/color_e6e6e6"
+                android:endColor="@color/color_f6f6f5" />
+            <!--角度-->
+            <corners android:radius="@dimen/x8" />
+            <!--边线-->
+            <stroke android:width="@dimen/x1" android:color="@color/grey_dddddd" />
+        </shape>
+    </item>
+
+    <item >
+        <shape android:shape="rectangle">
+            <!--底色-->
+            <gradient android:angle="90"  android:startColor="@color/color_d2d2d2"
+                android:endColor="@color/color_f0f0f0" />
+            <!--角度-->
+            <corners android:radius="@dimen/x8" />
+            <!--边线-->
+            <stroke android:width="@dimen/x1" android:color="@color/color_c7bfa1" />
+        </shape>
+    </item>
+</selector><!--全局文件，改动之前确认-->

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_bg_title">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="@dimen/y50"
+        android:layout_height="@dimen/y50"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/y30"
+        android:contentDescription="@null"
+        android:src="@mipmap/icon_back_base" />
+
+    <TextView
+        android:id="@+id/tv_back_base"
+        style="@style/base_back_text"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_toEndOf="@+id/iv_back"
+        android:padding="@dimen/y38" />
+
+
+    <!--中间文字-->
+    <TextView
+        android:id="@+id/tv_title_base"
+        style="@style/base_title_text"
+        android:layout_centerInParent="true" />
+
+</merge>
