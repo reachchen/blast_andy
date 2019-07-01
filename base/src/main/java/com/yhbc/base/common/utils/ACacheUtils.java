@@ -2,7 +2,7 @@ package com.yhbc.base.common.utils;
 
 import android.content.Context;
 
-import com.yhbc.base.BaseAppication;
+import com.yhbc.base.BaseApplication;
 
 import java.io.Serializable;
 
@@ -18,7 +18,7 @@ public class ACacheUtils<T extends Serializable> {
     private static ACache mACache;
 
     private ACacheUtils() {
-        Context context = BaseAppication.baseApp.getBaseContext();
+        Context context = BaseApplication.baseApp.getBaseContext();
         mACache = ACache.get(context);
     }
 

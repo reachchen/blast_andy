@@ -1,8 +1,7 @@
 package com.yhbc.base.net.interceptor;
 
 import android.text.TextUtils;
-
-import com.yhbc.base.BaseAppication;
+import com.yhbc.base.BaseApplication;
 import com.yhbc.base.net.token.TokenUtils;
 import com.yhbc.base.net.token.bean.TokenBean;
 
@@ -20,7 +19,7 @@ import okhttp3.Response;
 public class RequestInterceptor implements Interceptor {
     @Override
     public Response intercept(Chain chain) throws IOException {
-        TokenBean bean = TokenUtils.getDataFromSp(BaseAppication.baseApp);
+        TokenBean bean = TokenUtils.getDataFromSp(BaseApplication.baseApp);
         Request request = chain.request()
                 .newBuilder()
                 .addHeader("Content-Type", "application/json; charset=UTF-8")

@@ -1,6 +1,6 @@
 package com.yhbc.base.common.utils;
 
-import com.yhbc.base.BaseAppication;
+import com.yhbc.base.BaseApplication;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -15,7 +15,7 @@ public class TimeLog {
     private static Map<String, Time> cache;
 
     static {
-        if (BaseAppication.baseApp.getIsDebug()) {
+        if (BaseApplication.baseApp.getIsDebug()) {
             cache = new HashMap<>();
         }
     }
@@ -27,7 +27,7 @@ public class TimeLog {
      * @param tag 说明
      */
     public static void start(String key, String tag) {
-        if (BaseAppication.baseApp.getIsDebug()) {
+        if (BaseApplication.baseApp.getIsDebug()) {
             Time time = getCacheTime(key);
             System.out.println(TAG + " " + key + " : start " + tag);
             time.start = time.current = System.currentTimeMillis();
@@ -42,7 +42,7 @@ public class TimeLog {
      * @param tag 说明
      */
     public static void end(String key, String tag) {
-        if (BaseAppication.baseApp.getIsDebug()) {
+        if (BaseApplication.baseApp.getIsDebug()) {
             Time time = getCacheTime(key);
             long cache = System.currentTimeMillis();
             long jiange = cache - time.current;

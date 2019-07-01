@@ -1,12 +1,9 @@
 package com.yhbc.base.common.db;
 
 import android.database.sqlite.SQLiteDatabase;
-
-import com.yhbc.base.BaseAppication;
-
+import com.yhbc.base.BaseApplication;
 import greendao.dao.DaoMaster;
 import greendao.dao.DaoSession;
-
 public class DBUtils {
     public DaoSession daoSession = null;
     public SQLiteDatabase db = null;
@@ -32,8 +29,6 @@ public class DBUtils {
         }
         return db;
     }
-
-
     /**
      * 下面代码仅仅需要执行一次，一般会放在application
      * initial Database
@@ -54,8 +49,8 @@ public class DBUtils {
 //        if (daoSession == null) {
             daoSession = daoMaster.newSession();
 //        }
-        BaseAppication.baseApp.setDb(db);
-        BaseAppication.baseApp.setDaoSession(daoSession);
+        BaseApplication.baseApp.setDb(db);
+        BaseApplication.baseApp.setDaoSession(daoSession);
     }
 
 }

@@ -5,18 +5,15 @@ import android.content.ContextWrapper;
 import android.database.DatabaseErrorHandler;
 import android.database.sqlite.SQLiteDatabase;
 import android.text.TextUtils;
-
-import com.yhbc.base.BaseAppication;
-
+import com.yhbc.base.BaseApplication;
 import java.io.File;
 import java.io.IOException;
 
 public class GreenDaoContext extends ContextWrapper {
 
     public GreenDaoContext() {
-        super(BaseAppication.baseApp);
+        super(BaseApplication.baseApp);
     }
-
     /**
      * 获得数据库路径，如果不存在，则创建对象
      */
@@ -73,7 +70,6 @@ public class GreenDaoContext extends ContextWrapper {
 
     /**
      * Android 4.0会调用此方法获取数据库。
-     * @see ContextWrapper#openOrCreateDatabase(String, int,
      * SQLiteDatabase.CursorFactory,
      * DatabaseErrorHandler)
      */
@@ -85,7 +81,7 @@ public class GreenDaoContext extends ContextWrapper {
     }
 
     public static Context getContext() {
-        return BaseAppication.baseApp;
+        return BaseApplication.baseApp;
     }
 
 }

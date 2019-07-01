@@ -8,13 +8,10 @@ import android.os.Environment;
 import android.support.annotation.IntDef;
 import android.support.annotation.IntRange;
 import android.util.Log;
-
-import com.yhbc.base.BaseAppication;
-
+import com.yhbc.base.BaseApplication;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -30,19 +27,14 @@ import java.util.Formatter;
 import java.util.Locale;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Source;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
-
 /**
  * Log统一管理类
- *
- *
- *
  */
 public class LogUtils
 {
@@ -54,8 +46,6 @@ public class LogUtils
     }
 
     private static final String TAG = "需要打印log的地方：";
-
-
     public static final int V = Log.VERBOSE;
     public static final int D = Log.DEBUG;
     public static final int I = Log.INFO;
@@ -78,7 +68,7 @@ public class LogUtils
     private static String          sDefaultDir;// log默认存储目录
     private static String          sDir;       // log存储目录
     private static String  sFilePrefix        = "util";// log文件前缀
-    private static boolean sLogSwitch         = BaseAppication.baseApp.getIsDebug();  // log总开关，默认开
+    private static boolean sLogSwitch         = BaseApplication.baseApp.getIsDebug();  // log总开关，默认开
     private static boolean sLog2ConsoleSwitch = true;  // logcat是否打印，默认打印
     private static String  sGlobalTag         = null;  // log标签
     private static boolean sTagIsSpace        = true;  // log标签是否为空白
@@ -460,10 +450,10 @@ public class LogUtils
     public static class Config {
         private Config() {
             if (sDefaultDir != null) return;
-            if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState()) && BaseAppication.baseApp.getExternalCacheDir() != null)
-                sDefaultDir = BaseAppication.baseApp.getExternalCacheDir() + FILE_SEP + "log" + FILE_SEP;
+            if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState()) && BaseApplication.baseApp.getExternalCacheDir() != null)
+                sDefaultDir = BaseApplication.baseApp.getExternalCacheDir() + FILE_SEP + "log" + FILE_SEP;
             else {
-                sDefaultDir = BaseAppication.baseApp.getCacheDir() + FILE_SEP + "log" + FILE_SEP;
+                sDefaultDir = BaseApplication.baseApp.getCacheDir() + FILE_SEP + "log" + FILE_SEP;
             }
         }
 

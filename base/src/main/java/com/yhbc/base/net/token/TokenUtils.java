@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 import android.text.TextUtils;
 
 import com.alibaba.fastjson.JSONObject;
-import com.yhbc.base.BaseAppication;
+import com.yhbc.base.BaseApplication;
 import com.yhbc.base.net.token.bean.TokenBean;
 
 import java.util.HashMap;
@@ -109,7 +109,7 @@ public class TokenUtils {
         //版本
         headMap.put("client_version", "0.929");
         headMap.put("invoke_source", invokeSource);
-        TokenBean bean = TokenUtils.getDataFromSp(BaseAppication.baseApp);
+        TokenBean bean = TokenUtils.getDataFromSp(BaseApplication.baseApp);
         if (!TextUtils.isEmpty(bean.getToken())) {
             headMap.put("token", bean.getToken());
         }

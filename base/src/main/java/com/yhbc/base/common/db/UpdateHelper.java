@@ -52,8 +52,6 @@ public class UpdateHelper {
      *
      * @param tableName tableName
      * @param column    列名
-     * @return true:存在
-     * @throws Exception
      */
     public static boolean isColumnExists(String tableName, String column, SQLiteDatabase db) throws Exception {
         Cursor cursor = null;
@@ -79,10 +77,6 @@ public class UpdateHelper {
 
     /**
      * 表是否存在
-     *
-     * @param tableName TableName
-     * @return true:存在
-     * @throws Exception
      */
     public static boolean findTable(String tableName, SQLiteDatabase db) throws Exception {
         Cursor cursor = null;

@@ -4,8 +4,7 @@ import android.content.Context;
 import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
-
-import com.yhbc.base.BaseAppication;
+import com.yhbc.base.BaseApplication;
 import com.yhbc.base.net.converter.FastJsonConverterFactory;
 import com.yhbc.base.net.interceptor.LoggingInterceptor;
 import com.yhbc.base.net.interceptor.RequestInterceptor;
@@ -146,7 +145,7 @@ public class ServiceManagerImpl implements ServiceManager {
     //构造client
     public static OkHttpClient getClient(List<Interceptor> interceptors, boolean isAddInterceptor) {
         // 指定缓存路径,缓存大小10Mb
-        Cache cache = new Cache(getSDKRootDir(BaseAppication.baseApp, "winboxcash/HttpCache"),
+        Cache cache = new Cache(getSDKRootDir(BaseApplication.baseApp, "winboxcash/HttpCache"),
                 1024 * 1024 * 10);
         OkHttpClient.Builder client = new OkHttpClient.Builder()
                 .retryOnConnectionFailure(true)

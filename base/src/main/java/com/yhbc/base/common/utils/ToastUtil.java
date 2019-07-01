@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.yhbc.base.BaseAppication;
+import com.yhbc.base.BaseApplication;
 import com.yhbc.base.R;
 
 
@@ -42,17 +42,17 @@ public class ToastUtil {
      * @param resId
      */
     public static void showToast(Context context, int resId) {
-            showToast(BaseAppication.baseApp, BaseAppication.baseApp.getResources().getString(resId));
+            showToast(BaseApplication.baseApp, BaseApplication.baseApp.getResources().getString(resId));
     }
 
     /**
      * 显示时间短的Toast
      */
     public static void showShort(String msg) {
-        if (TextUtils.isEmpty(msg) && null != BaseAppication.baseApp) {
+        if (TextUtils.isEmpty(msg) && null != BaseApplication.baseApp) {
             return;
         }
-        mToast = Toast.makeText(BaseAppication.baseApp, msg, Toast.LENGTH_SHORT);
+        mToast = Toast.makeText(BaseApplication.baseApp, msg, Toast.LENGTH_SHORT);
         mToast.show();
     }
 
@@ -81,7 +81,7 @@ public class ToastUtil {
         if (null != mToast) {
             mToast.cancel();
         }
-        mToast = Toast.makeText(BaseAppication.baseApp, text, Toast.LENGTH_SHORT);
+        mToast = Toast.makeText(BaseApplication.baseApp, text, Toast.LENGTH_SHORT);
         mToast.show();
     }
 
@@ -93,20 +93,20 @@ public class ToastUtil {
         if (null != mToast) {
             mToast.cancel();
         }
-        mToast = Toast.makeText(BaseAppication.baseApp, text, Toast.LENGTH_LONG);
+        mToast = Toast.makeText(BaseApplication.baseApp, text, Toast.LENGTH_LONG);
         mToast.setGravity(Gravity.CENTER, 0, 0);
         mToast.show();
     }
 
     public static void  customToastShow(Context context, String msg) {
-        LayoutInflater inflater = (LayoutInflater)BaseAppication.baseApp.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        LayoutInflater inflater = (LayoutInflater)BaseApplication.baseApp.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         //自定义布局
         View view = inflater.inflate(R.layout.mn_status_dialog_layout, null);
         //自定义toast文本R.layout.mn_status_dialog_layout
         mTextView = (TextView)view.findViewById(R.id.tvShow);
         mTextView.setText(msg);
         if (mToast == null) {
-            mToast = new Toast(BaseAppication.baseApp);
+            mToast = new Toast(BaseApplication.baseApp);
         }
         //设置toast居中显示
         mToast.setGravity(Gravity.CENTER, 0, 0);

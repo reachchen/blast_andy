@@ -6,8 +6,7 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Environment;
 
-import com.yhbc.base.BaseAppication;
-
+import com.yhbc.base.BaseApplication;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -32,7 +31,7 @@ public class FileUtil {
      * @return
      */
     public static String getRootCache() {
-        File externalCacheDir = BaseAppication.baseApp.getExternalCacheDir();
+        File externalCacheDir = BaseApplication.baseApp.getExternalCacheDir();
         if (externalCacheDir == null && !externalCacheDir.exists()) {
             externalCacheDir.mkdirs();
         }

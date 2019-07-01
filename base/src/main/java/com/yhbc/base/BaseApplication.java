@@ -13,13 +13,12 @@ import java.io.File;
 import java.util.Map;
 
 import greendao.dao.DaoSession;
-
 /**
- * Base
- * Created by xuhaijiang on 2018/5/4.
- */
-public class BaseAppication extends MultiDexApplication {
-    public static BaseAppication baseApp;
+*@author AndyChen
+*@time 2019/7/1 20:15
+*/
+public class BaseApplication extends MultiDexApplication {
+    public static BaseApplication baseApp;
     public static DaoSession daoSession = null;
     public static SQLiteDatabase db = null;
     /**

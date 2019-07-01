@@ -2,13 +2,11 @@ package retrofit2;
 
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
-
-import com.yhbc.base.BaseAppication;
+import com.yhbc.base.BaseApplication;
 import com.yhbc.base.framework.exception.ApiException;
 import com.yhbc.base.net.UrlEnum;
 import com.yhbc.base.net.YKey;
 import com.yhbc.base.net.YUrl;
-
 import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -19,13 +17,11 @@ import java.util.Map;
 /**
  * 银盒子的retrofit<br>
  * 与retrofit相同包名是为了绕过retrofit中一些类不能引用的问题
- *
  * @author xuhaijiang on 2018/10/9.
  */
 public class YhzRetrofit {
     /**
      * 在retrofit外再做一次代理
-     *
      * @param service 接口类
      * @param build   原有的retrofit的builder 缺少baseUrl
      * @param <T>     t
@@ -105,7 +101,6 @@ public class YhzRetrofit {
 
         /**
          * 处理YKey注解
-         *
          * @param yKey ykey
          * @param method 方法
          * @param args 参数
@@ -113,7 +108,7 @@ public class YhzRetrofit {
          */
         private Object handleYkey(YKey yKey, Method method, Object[] args) {
             //重构http请求
-            Map<String, String> apiMap = BaseAppication.baseApp.getApiConfigMap();
+            Map<String, String> apiMap = BaseApplication.baseApp.getApiConfigMap();
             String value = null;
             if (null != apiMap) {
                 value = apiMap.get(yKey.value());
@@ -133,14 +128,11 @@ public class YhzRetrofit {
             //去掉方法前'/'
             boolean isInFirst = value.indexOf("/") == 0;
             value = isInFirst ? value.substring(1) : value;
-
             ServiceMethod serviceMethod = loadServiceMethod(method, yKey, value);
             //noinspection unchecked
             OkHttpCall<Object> okHttpCall = new OkHttpCall<>(serviceMethod, args);
             //noinspection unchecked
             return serviceMethod.adapt(okHttpCall);
-
-
         }
 
         /**
@@ -170,7 +162,5 @@ public class YhzRetrofit {
             return result;
 
         }
-
     }
-
 }

@@ -9,19 +9,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
-
 import com.yhbc.base.common.utils.StatusBarUtil;
-
 import butterknife.ButterKnife;
-import butterknife.Unbinder;
 
 public abstract class BaseActivity<T> extends AppCompatActivity {
 
     public String TAG = "BaseActivity---->";
-//    private Unbinder mUnBinder;
-
     protected T mPresenter;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,7 +79,6 @@ public abstract class BaseActivity<T> extends AppCompatActivity {
 
     /**
      * 设置亮色状态栏时，更改状态栏字体颜色为黑色
-     *
      * @return
      */
     protected @ColorInt
@@ -96,7 +89,6 @@ public abstract class BaseActivity<T> extends AppCompatActivity {
 
     /**
      * 判断颜色是不是亮色
-     *
      * @param color
      * @return
      */
@@ -133,9 +125,6 @@ public abstract class BaseActivity<T> extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.e(TAG, getPackageName().getClass().getName() + "onDestroy");
-//        if (mUnBinder != Unbinder.EMPTY) {
-//            mUnBinder.unbind();
-//        }
     }
 
 
